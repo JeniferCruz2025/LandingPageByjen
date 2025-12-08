@@ -4,7 +4,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 const Showcase = () => {
-    const isTablet = useMediaQuery({ query: '(max-width: 1024px' });
+    const isTablet = useMediaQuery({ query: "(max-width: 1024px)" });
 
     useGSAP(() => {
         if (!isTablet) {
@@ -28,8 +28,8 @@ const Showcase = () => {
         <section id="showcase" className="relative w-full h-screen overflow-hidden mb-190">
             <div className="media absolute inset-0">
                 <video src="/videos/ads.mp4" className="w-full h-full object-cover" loop muted autoPlay playsInline />
-                <div className="mask absolute inset-0 flex items-center justify-center">
-                    <img src="mascara-teste.svg" className="h-auto" alt="" />
+                <div className="mask absolute inset-0 pointer-events-none">
+                    <img src="mascara-teste.svg" className="w-full h-full object-cover" />
                 </div>
             </div>
         </section>

@@ -10,7 +10,7 @@ import { SectionWrapper } from '../hoc'
 
 const ServiceCard = ({ index, title, icon, description}) => {
   return (
-    <Tilt className="w-[250px]">
+    <Tilt className="w-full sm:w-[250px]">
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * 
         index, 0.75)}
@@ -56,7 +56,7 @@ const Cards = () => {
         Aquí encontrarás contenido exclusivo para influencers y creadores de contenido
       </motion.p>
 
-      <div className='mt-10 grid-cols-3 grid gap-10 justify-center'>
+      <div className='mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index=
           {index} {...service} />
