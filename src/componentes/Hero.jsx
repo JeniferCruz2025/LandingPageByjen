@@ -40,9 +40,9 @@ const Hero = () => {
     <div className="w-full max-h-[600px] overflow-hidden flex justify-center">
         <video
           ref={videoRef}
-          src="/videos/template_1.mp4"
+          src="/videos/teste.mp4"
           autoPlay
-          className='w-full h-full'
+          className='w-3xl'
           muted
           loop
           playsInline
