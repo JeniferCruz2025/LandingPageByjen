@@ -4,6 +4,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 const Showcase = () => {
+    const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
     const isTablet = useMediaQuery({ query: "(max-width: 1024px)" });
 
     useGSAP(() => {
@@ -18,22 +19,36 @@ const Showcase = () => {
                 }
             });
 
-            timeline.to('.mask img', {
-                transform: 'scale(1.1)'
-            }).to('.content', { opacity: 1, y: 0, ease: 'power1.in' });
+            timeline
+                .to('.mask img', {
+                    transform: 'scale(1.1)'
+                })
+                .to('.content', { opacity: 1, y: 0, ease: 'power1.in' });
         }
-    }, [isTablet])
+    }, [isTablet]);
 
     return (
         <section id="showcase" className="relative w-full h-screen overflow-hidden mb-190">
             <div className="media absolute inset-0">
-                <video src="/videos/ads.mp4" className="w-full h-full object-cover" loop muted autoPlay playsInline />
+                <video
+                    src="/videos/ads.mp4"
+                    className="w-full h-full object-cover"
+                    loop
+                    muted
+                    autoPlay
+                    playsInline
+                />
+
                 <div className="mask absolute inset-0 pointer-events-none">
-                    <img src="mascara-teste.svg" className="w-full h-full object-cover" />
+                    <img
+                        src={isMobile ? "mascara_celular.svg" : "mascara-teste.svg"}
+                        className="w-full h-full object-cover"
+                        alt="Mascara"
+                    />
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default Showcase
+export default Showcase;

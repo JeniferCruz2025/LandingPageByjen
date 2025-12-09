@@ -11,7 +11,6 @@ const Hero = () => {
     }, []);
 
     const handleAnimationComplete = () => {
-        console.log('Animação de texto concluída!');
     };
 
     return (
