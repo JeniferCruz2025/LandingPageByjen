@@ -54,17 +54,8 @@ const Hero = () => {
         />
       </div>
 
-      <a
-        href="https://wa.me/56938946998"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="
-         px-5 py-2 sm:px-6 sm:py-3 bg-[#f6a700] text-black rounded-xl hover:bg-purple-600 transition-all mt-10"
-      >
-        Contacto
-      </a>
 
-      <p className="text-sm sm:text-base opacity-80">
+      <p className="text-sm sm:text-base opacity-80 mt-20">
         Múltiples resultados para diferentes estrategias
       </p>
     </section>
