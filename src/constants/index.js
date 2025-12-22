@@ -1,7 +1,8 @@
 export const navLinks = [
-    { label: 'Influencer'},
+    { label: 'Início'},
     { label: 'Empresa'},
-    { label: 'Contact'},
+    { label: 'Influencer'},
+    { label: 'Contacto'},
 ];
 
 const performanceImages = [
@@ -52,7 +53,20 @@ const performanceImgPositions = [
     },
 ];
 
+const influencerVideos = [
+    { id: "v1", src: "/v1.mp4" },
+    { id: "v2", src: "/v2.mp4" },
+    { id: "v3", src: "/v3.mp4" },
+    { id: "v4", src: "/v4.mp4" },
+    { id: "v5", src: "/v5.mp4" },
+    { id: "v6", src: "/v6.mp4" },
+    { id: "v7", src: "/v7.mp4" },
+    { id: "v8", src: "/v8.mp4"},
+];
+
 export {
     performanceImages,
     performanceImgPositions,
+    influencerVideos,
 };
+

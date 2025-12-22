@@ -1,14 +1,15 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
-  redux,
-  tailwind,
   carrent,
   jobit,
   tripguide,
 } from "../assets";
+
+import breafing from '../assets/breafing.png'
+import proposta from '../assets/PROPOSTA.png'
+import posicionamento from '../assets/POSICIONAMIENTO.png'
+import auditoria from '../assets/AUDITORÍA.png'
+import otimizacao from '../assets/OPTIMIZACIÓN.png'
+import producao from '../assets/PRODUCAO.png'
 
 import doing from '../assets/company/doing.png'
 import question from '../assets/company/question.png'
@@ -41,33 +42,33 @@ export const navLinks = [
 const services = [
   {
     title: "BREAFING",
-    icon: web,
-    description: "Antes de hablar de métricas, definimos los objetivos, la identidad y el tono de la marca."
+    icon: breafing,
+    description: "Antes de hablar de métricas, definimos los objetivos digitales, la identidad de marca y el tono comunicacional"
   },
   {
     title: "AUDITORÍA",
-    icon: mobile,
-    description: "Analizamos tu presencia digital actual para identificar oportunidades y errores ocultos."
+    icon: auditoria,
+    description: "Analizamos tu ecosistema online (web, redes, buscadores) para detectar oportunidades, brechas y errores invisibles"
   },
   {
     title: "POSICIONAMIENTO",
-    icon: backend,
-    description: "Creamos un enfoque estratégico para que tu marca destaque con autenticidad."
+    icon: posicionamento,
+    description: "Diseñamos una estrategia para que tu marca se diferencie con autenticidad en entornos digitales competitivos"
   },
   {
     title: "PROPUESTA CREATIVA",
-    icon: creator,
-    description: "Desarrollamos ideas originales basadas en datos y en la esencia real de tu proyecto."
+    icon: proposta,
+    description: "Creamos ideas originales basadas en datos, tendencias y la esencia real de tu proyecto para conectar con tu audiencia"
   },
   {
     title: "PRODUCCIÓN Y ACTIVACIÓN",
-    icon: creator,
-    description: "Transformamos la estrategia en contenido real, campañas y acciones prácticas."
+    icon: producao,
+    description: "Transformamos la estrategia en contenidos, campañas y acciones prácticas para redes, email marketing y más"
   },
   {
     title: "OPTIMIZACIÓN Y SEGUIMIENTO",
-    icon: creator,
-    description: "Monitoreamos y ajustamos constantemente para asegurar crecimiento y resultados."
+    icon: otimizacao,
+    description: "Monitoreamos, analizamos y ajustamos constantemente para asegurar rendimiento, conversión y crecimiento sostenido"
   },
 ];
 

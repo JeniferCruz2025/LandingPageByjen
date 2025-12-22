@@ -3,10 +3,11 @@
 const Footer = () => {
   return (
         <footer>
-            <div className='info'>
+            <div className='info flex flex-col items-center text-center'>
                 <p>"Ver no es suficiente Hay que mirar con propósito"</p>
-                <img src="/logo.png" alt="" />
             </div>
+
+            <img src="/logo.png" alt="" />
 
             <hr />
 

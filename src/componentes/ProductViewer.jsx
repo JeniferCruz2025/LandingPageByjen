@@ -12,8 +12,7 @@ const ProductViewer = () => {
       <p className="text-center opacity-70 mb-10 max-w-xl">
         Visualiza una de nuestras herramientas de trabajo. Muy pronto aquí aparecerá nuestro modelo actualizado 📱
       </p>
-
-      {/* Canvas livre, sem container fixo */}
+      
       <Canvas
         id="canvas"
         className="w-full h-[600px]" 

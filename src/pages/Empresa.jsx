@@ -78,13 +78,16 @@ const Empresa = () => {
       <div className="content text-center max-w-3xl mx-auto mb-20">
         <p className="text-xl leading-relaxed">
           Byjen!{" "}
-          <span className="text-purple-300 font-semibold">
-            Futuro y tecnología
+          <span className="text-[#f6a700] font-semibold">
+            FUTURO y TECNOLIGÍA
           </span>{" "}
           accesible para todos!
         </p>
         <p className="mt-4 opacity-60">
-          Mi empresa se centró en impulsar marcas, creadores y negocios a través de soluciones inteligentes en marketing y tecnología digital.
+        Creemos en una tecnología que no distingue fronteras, que conecta
+        personas y transforma sueños en realidades.
+        Cada idea que nace aquí está pensada para ser cercana, humana y accesible, porque el
+        verdadero progreso se mide en la capacidad de llegar a todos
         </p>
       </div>
 

@@ -22,13 +22,13 @@ const ServiceCard = ({ index, title, icon, description}) => {
             scale: 1,
             speed: 450
         }}
-          className="bg-[#161030] rounded-[20px] 
+          className="bg-[#f6a700] rounded-[20px] 
           py-4 px-12 min-h-[280px] flex 
           justify-evenly items-center flex-col"
         >
           <img src={icon} alt={title} className='w-16 h-16 object-contain' />
-          <h3 className='text-white text-[20px] font-bold text-center'>{title}</h3>
-           <p className="text-[#aaa6c3] text-center text-[14px] leading-[20px]">
+          <h3 className='text-black text-[20px] font-bold text-center'>{title}</h3>
+           <p className="text-black text-center text-[14px] leading-[20px]">
             {description}
           </p>
         </div>
