@@ -4,7 +4,7 @@ const Footer = () => {
   return (
         <footer>
             <div className='info flex flex-col items-center text-center'>
-                <p>"Ver no es suficiente, Hay que mirar con propósito"</p>
+                <p>"Ver no es suficiente, hay que mirar con propósito"</p>
             </div>
 
             <img src="/logo.png" alt="" />
