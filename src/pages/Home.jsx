@@ -10,6 +10,7 @@ const Home = () => {
     return (
         <main className="w-full bg-black text-white flex flex-col items-center justify-center overflow-hidden">
             <Hero />
+            
             <SobreNos />
            
             <section>

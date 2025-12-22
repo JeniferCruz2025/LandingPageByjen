@@ -108,7 +108,7 @@ const Empresa = () => {
         <h3 className="text-2xl font-semibold mb-4">Soluciones a medida</h3>
         <p className="mb-4">
           Cada asociación se construye entendiendo cuál es realmente su marca
-          necesidad — ya sea alcance, estética, identidad o automatización digital.
+          necesidad ya sea alcance, estética, identidad o automatización digital.
         </p>
         <p>
           Nuestro trabajo une creatividad, análisis y tecnología para ofrecer
