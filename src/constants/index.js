@@ -1,5 +1,5 @@
 export const navLinks = [
-    { label: 'Início'},
+    { label: 'Inicio '},
     { label: 'Empresa'},
     { label: 'Influencer'},
     { label: 'Contacto'},
