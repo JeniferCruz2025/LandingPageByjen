@@ -210,8 +210,7 @@ const Contacto = () => {
           {/** BOTÃO */}
           <button
             type="submit"
-            className="bg-[#15102e] py-3 px-8 outline-none w-fit text-white 
-                       font-bold shadow-md shadow-primary rounded-xl"
+            className="px-8 py-3 w-fit sm:px-6 sm:py-3 bg-[#f6a700] text-black hover:bg-purple-600 transition-all shadow-md shadow-primary rounded-xl"
           >
             {loading ? "Enviando..." : "Enviar"}
           </button>
