@@ -7,15 +7,6 @@ import { SectionWrapper } from '../hoc';
 import { slideIn } from "../utils/motion";
 import StarsCanvas from "../componentes/canvas/Stars";
 
-const countryCodes = [
-  { code: "+55", country: "Brasil" },
-  { code: "+56", country: "Chile" },
-  { code: "+54", country: "Argentina" },
-  { code: "+51", country: "Perú" },
-  { code: "+57", country: "Colombia" },
-  { code: "+52", country: "México" },
-];
-
 const servicios = [
   "Gestión de Redes Sociales",
   "Publicidad Digital (Ads)",
@@ -33,7 +24,6 @@ const Contacto = () => {
     email: '',
     message: '',
     phone: '',
-    phonePrefix: '+55',
     nationality: '',
     company: '',
     servicio: '',
@@ -57,12 +47,6 @@ const Contacto = () => {
 
   const handlePhoneChange = (e) => {
     setForm({ ...form, phone: formatPhone(e.target.value) });
-  };
-
-  const handlePrefixChange = (e) => {
-    const prefix = e.target.value;
-    const current = form.phone.replace(/\D/g, '');
-    setForm({ ...form, phonePrefix: prefix, phone: formatPhone(current) });
   };
 
   const handleChange = (e) => {
@@ -94,7 +78,7 @@ const Contacto = () => {
         to_name: 'byjen',
         from_email: form.email,
         to_email: 'byjen.contact@gmail.com',
-        phone: `${form.phonePrefix} ${form.phone}`,
+        phone: form.phone,
         nationality: form.nationality,
         company: form.company,
         servicio: form.servicio,
@@ -110,7 +94,6 @@ const Contacto = () => {
         email: '',
         message: '',
         phone: '',
-        phonePrefix: '+55',
         nationality: '',
         company: '',
         servicio: '',
@@ -133,7 +116,6 @@ const Contacto = () => {
 
         <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col gap-8">
 
-          {/** INPUT PADRÃO */}
           {[
             { label: "Nombre", name: "name", placeholder: "Nombre completo:" },
             { label: "Email", name: "email", placeholder: "Correo electrónico:", type: "email" },
@@ -156,27 +138,13 @@ const Contacto = () => {
           {/** TELEFONE */}
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Teléfono</span>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <select
-                value={form.phonePrefix}
-                onChange={handlePrefixChange}
-                className="bg-[#d4a017] text-black py-4 px-4 rounded-lg focus:ring-2 focus:ring-black/40"
-              >
-                {countryCodes.map(c => (
-                  <option key={c.code} value={c.code}>
-                    {c.country} ({c.code})
-                  </option>
-                ))}
-              </select>
-
-              <input
-                type="text"
-                value={form.phone}
-                onChange={handlePhoneChange}
-                placeholder="(DDD) 9 9999-9999"
-                className="flex-1 bg-[#d4a017] text-black placeholder:text-black/60 py-4 px-6 rounded-lg outline-none font-medium focus:ring-2 focus:ring-black/40"
-              />
-            </div>
+            <input
+              type="text"
+              value={form.phone}
+              onChange={handlePhoneChange}
+              placeholder="(DDD) 9 9999-9999"
+              className="bg-[#d4a017] text-black placeholder:text-black/60 py-4 px-6 rounded-lg outline-none font-medium focus:ring-2 focus:ring-black/40"
+            />
           </label>
 
           {/** SERVIÇOS */}
