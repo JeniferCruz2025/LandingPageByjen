@@ -112,7 +112,7 @@ const Empresa = () => {
         </p>
         <p>
           Nuestro trabajo une creatividad, análisis y tecnología para ofrecer
-          resultados consistentes y crecer contigo. 
+          resultados consistentes y crecer contigo. oi
         </p>
       </div>
     </section>
